@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ui-component": {
+      "description": "Generate a page, section, card or tile component",
+      "factory": "./dist/ui-component/index#uiComponent",
+      "schema": "./src/ui-component/schema.json"
+    }
+  }
+}

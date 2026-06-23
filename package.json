@@ -1,0 +1,32 @@
+{
+  "name": "@chinjto/generator-angular",
+  "version": "0.1.0",
+  "description": "Angular generator for custom components",
+  "schematics": "./collection.json",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc && cp -R src/ui-component/files dist/ui-component/files",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinjto/generator-angular.git"
+  },
+  "keywords": [],
+  "author": "Chinjto <contact@chinto.fr> (https://www.chinto.fr)",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chinjto/generator-angular/issues"
+  },
+  "homepage": "https://github.com/chinjto/generator-angular#readme",
+  "dependencies": {
+    "@angular-devkit/core": "^21.2.16",
+    "@angular-devkit/schematics": "^21.2.16"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

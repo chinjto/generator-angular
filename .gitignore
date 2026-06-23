@@ -8,4 +8,8 @@
 .DS_Store
 Thumbs.db
 
-../latex/.env
+# Angular build
+node_modules/
+dist/
+
+.env

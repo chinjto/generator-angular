@@ -13,7 +13,7 @@ interface Options {
 }
 
 export function uiComponent(options: Options): Rule {
-    return () => {
+    return (tree, context) => {
         const basePaths = {
             page: 'src/app/pages',
             section: 'src/app/shared/components/sections',
@@ -26,7 +26,9 @@ export function uiComponent(options: Options): Rule {
         const selector = `${options.type}-${name}`;
         const targetPath = `${basePaths[options.type]}/${name}`;
 
-        const source = apply(url('./files'), [
+        context.logger.info(`Generating ${options.type} "${name}" in ${targetPath}`);
+
+        const source = apply(url('../ui-component/files'), [
             applyTemplates({
                 ...strings,
                 name,
@@ -37,6 +39,6 @@ export function uiComponent(options: Options): Rule {
             move(targetPath),
         ]);
 
-        return mergeWith(source);
+        return mergeWith(source)(tree, context);
     };
 }

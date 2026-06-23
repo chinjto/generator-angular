@@ -1,6 +1,6 @@
 {
   "name": "@chinjto/generator-angular",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Angular generator for custom components",
   "schematics": "./collection.json",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "name": "@chinjto/generator-angular",
-  "version": "0.2.0",
-  "description": "Angular generator for custom components",
+  "version": "1.0.0",
+  "description": "Custom Angular schematics for opinionated project structures.",
   "schematics": "./collection.json",
   "scripts": {
     "clean": "rm -rf dist",
@@ -12,9 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/chinjto/generator-angular.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "src/**/*.json",
+    "collection.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "keywords": [],
   "author": "Chinjto <contact@chinto.fr> (https://www.chinto.fr)",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/chinjto/generator-angular/issues"

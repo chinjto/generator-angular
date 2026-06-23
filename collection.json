@@ -20,6 +20,10 @@
       "description": "Generate a tile component",
       "factory": "./dist/tile/index#tile",
       "schema": "./src/tile/schema.json"
+    },
+    "ng-add": {
+      "description": "Setup generator-angular",
+      "factory": "./dist/ng-add/index#ngAdd"
     }
   }
 }

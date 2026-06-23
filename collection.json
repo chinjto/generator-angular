@@ -1,10 +1,25 @@
 {
   "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "ui-component": {
-      "description": "Generate a page, section, card or tile component",
-      "factory": "./dist/ui-component/index#uiComponent",
-      "schema": "./src/ui-component/schema.json"
+    "page": {
+      "description": "Generate a page component",
+      "factory": "./dist/page/index#page",
+      "schema": "./src/page/schema.json"
+    },
+    "section": {
+      "description": "Generate a section component",
+      "factory": "./dist/section/index#section",
+      "schema": "./src/section/schema.json"
+    },
+    "card": {
+      "description": "Generate a card component",
+      "factory": "./dist/card/index#card",
+      "schema": "./src/card/schema.json"
+    },
+    "tile": {
+      "description": "Generate a tile component",
+      "factory": "./dist/tile/index#tile",
+      "schema": "./src/tile/schema.json"
     }
   }
 }

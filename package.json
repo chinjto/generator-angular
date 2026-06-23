@@ -1,6 +1,6 @@
 {
   "name": "@chinjto/generator-angular",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Custom Angular schematics for opinionated project structures.",
   "schematics": "./collection.json",
   "scripts": {

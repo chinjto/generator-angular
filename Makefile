@@ -5,7 +5,7 @@ DEPLOY_SCRIPT = echo "Undefined deploy script for this project."
 
 include ~/.make/angular.mk
 
-publish: deploy
+publish: deploy sandbox
 ifndef VERSION
 	$(error VERSION is required. Usage: make publish VERSION=0.2.1)
 endif
@@ -14,3 +14,10 @@ endif
 	git checkout v$(VERSION); \
 	npm pack; \
 	npm publish
+
+sandbox:
+	npm run sandbox:clean
+	npm run sandbox:idea
+
+sandbox-clean:
+	npm run sandbox:clean

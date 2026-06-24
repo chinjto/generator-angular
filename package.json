@@ -6,7 +6,10 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc && cp -R src/ui-component/files dist/ui-component/files",
-    "rebuild": "npm run clean && npm run build"
+    "rebuild": "npm run clean && npm run build",
+    "sandbox": "./.scripts/sandbox-angular.sh",
+    "sandbox:idea": "./.scripts/sandbox-angular.sh --idea",
+    "sandbox:clean": "rm -rf /tmp/gen-angular-*"
   },
   "repository": {
     "type": "git",

@@ -12,6 +12,8 @@ interface Options {
     type: 'page' | 'section' | 'card' | 'tile';
 }
 
+const NO_SUFFIX_TYPES = ["page"];
+
 export function uiComponent(options: Options): Rule {
     return (tree, context) => {
         const basePaths = {
@@ -22,7 +24,7 @@ export function uiComponent(options: Options): Rule {
         };
 
         const name = strings.dasherize(options.name);
-        const className = strings.classify(options.name);
+        const className = generateClassName(options);
         const selector = `${options.type}-${name}`;
         const targetPath = `${basePaths[options.type]}/${name}`;
 
@@ -41,4 +43,12 @@ export function uiComponent(options: Options): Rule {
 
         return mergeWith(source)(tree, context);
     };
+}
+
+function generateClassName(options: Options): string {
+    const name = strings.classify(options.name);
+    if (NO_SUFFIX_TYPES.includes(options.type)) {
+        return name;
+    }
+    return name + strings.classify(options.type);
 }

@@ -3,27 +3,27 @@
   "schematics": {
     "page": {
       "description": "Generate a page component",
-      "factory": "./dist/page/index#page",
-      "schema": "./src/page/schema.json"
+      "factory": "./dist/components/page/index#page",
+      "schema": "./src/components/page/schema.json"
     },
     "section": {
       "description": "Generate a section component",
-      "factory": "./dist/section/index#section",
-      "schema": "./src/section/schema.json"
+      "factory": "./dist/components/section/index#section",
+      "schema": "./src/components/section/schema.json"
     },
     "card": {
       "description": "Generate a card component",
-      "factory": "./dist/card/index#card",
-      "schema": "./src/card/schema.json"
+      "factory": "./dist/components/card/index#card",
+      "schema": "./src/components/card/schema.json"
     },
     "tile": {
       "description": "Generate a tile component",
-      "factory": "./dist/tile/index#tile",
-      "schema": "./src/tile/schema.json"
+      "factory": "./dist/components/tile/index#tile",
+      "schema": "./src/components/tile/schema.json"
     },
     "ng-add": {
       "description": "Setup generator-angular",
-      "factory": "./dist/ng-add/index#ngAdd"
+      "factory": "./dist/core/ng-add/index#ngAdd"
     }
   }
 }

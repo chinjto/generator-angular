@@ -1,11 +1,17 @@
 # Changelog
 
+## v1.2.0
+
+- feat(style): Add style generator
+- feat(page-section): Add page sections generator
+
 ## v1.1.0
 
 - feat(make): Add publish goal
 - fix(component): remove default Component suffix
 - refactor(src): Split schemas into differents groups
 - feat(ng-add): Customise all required setups on target project
+- chore(changelog): Publish v1.1.0
 
 ## v1.0.0
 

@@ -9,12 +9,7 @@
         "$source": "argv",
         "index": 0
       }
-    },
-    "type": {
-      "type": "string",
-      "description": "UI component type",
-      "enum": ["page", "section", "card", "tile"]
     }
   },
-  "required": ["name", "type"]
+  "required": ["name"]
 }

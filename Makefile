@@ -5,7 +5,7 @@ DEPLOY_SCRIPT = echo "Undefined deploy script for this project."
 
 include ~/.make/angular.mk
 
-publish: deploy sandbox
+publish:
 ifndef VERSION
 	$(error VERSION is required. Usage: make publish VERSION=0.2.1)
 endif

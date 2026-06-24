@@ -29,6 +29,11 @@
       "description": "Generate a global style",
       "factory": "./dist/others/style/index#style",
       "schema": "./src/others/style/schema.json"
+    },
+    "page-section": {
+      "description": "Generate a section component into a page component",
+      "factory": "./dist/components/page/section/index#pageSection",
+      "schema": "./src/components/page/section/schema.json"
     }
   }
 }

@@ -24,6 +24,11 @@
     "ng-add": {
       "description": "Setup generator-angular",
       "factory": "./dist/core/ng-add/index#ngAdd"
+    },
+    "style": {
+      "description": "Generate a global style",
+      "factory": "./dist/others/style/index#style",
+      "schema": "./src/others/style/schema.json"
     }
   }
 }

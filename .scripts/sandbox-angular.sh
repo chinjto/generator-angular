@@ -5,8 +5,10 @@ npm run rebuild
 npm pack
 
 GEN_DIR="$(pwd)"
+TMP_HOME=~/.chinjto
 
-TMP_DIR="$(mktemp -d /tmp/gen-angular-XXXXXX)"
+mkdir -p $TMP_HOME
+TMP_DIR="$(mktemp -d $TMP_HOME/gen-angular-XXXXXX)"
 
 echo "Project: $TMP_DIR"
 

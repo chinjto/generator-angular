@@ -30,7 +30,7 @@ export function uiComponent(options: Options): Rule {
 
         context.logger.info(`Generating ${options.type} "${name}" in ${targetPath}`);
 
-        const source = apply(url('../ui-component/files'), [
+        const source = apply(url('../../core/ui-component/files'), [
             applyTemplates({
                 ...strings,
                 name,

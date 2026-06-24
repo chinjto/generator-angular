@@ -35,7 +35,8 @@
   "homepage": "https://github.com/chinjto/generator-angular#readme",
   "dependencies": {
     "@angular-devkit/core": "^21.2.16",
-    "@angular-devkit/schematics": "^21.2.16"
+    "@angular-devkit/schematics": "^21.2.16",
+    "jsonc-parser": "^3.3.1"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",

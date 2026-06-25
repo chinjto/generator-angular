@@ -7,7 +7,6 @@ interface Options {
 }
 
 export function pageSection(options: Options): Rule {
-    console.log("OPTIONS: ", options);
     return uiComponent({
         ...options,
         type: 'section',

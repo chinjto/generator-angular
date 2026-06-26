@@ -42,4 +42,12 @@ ng add @chinjto/generator-angular
 
 if [[ "${1:-}" == "--idea" ]]; then
   zsh -ic 'idea .'
+else
+  printf "Open IntelliJ? [y/N] "
+  read -r ANSWER
+  case "$ANSWER" in
+          y|Y|yes|yes)
+              zsh -ic 'idea .'
+              ;;
+  esac
 fi

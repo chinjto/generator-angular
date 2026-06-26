@@ -17,7 +17,7 @@ endif
 
 sandbox:
 	npm run sandbox:clean
-	npm run sandbox:idea
+	npm run sandbox
 
 sandbox-clean:
 	npm run sandbox:clean

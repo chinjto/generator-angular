@@ -5,6 +5,12 @@ import {updateAngularJson} from "./rules/update-angular-json";
 import {updateTsConfigPaths} from "./rules/update-tsconfig-paths";
 import {addSharedIndexScss} from "./rules/add-shared-index-scss";
 import {updateGlobalStyleFiles} from "./rules/update-global-style-files";
+import {addSeoCore} from "./rules/addSeoCore";
+import {addNavigationCore} from "./rules/addNavigationCore";
+import {addPrerenderCore} from "./rules/addPrerenderCore";
+import {updateAngularFilesForSeo} from "./rules/updateAngularFilesForSeo";
+import {updateAngularFilesForNavigation} from "./rules/updateAngularFilesForNavigation";
+import {updateAngularFilesForPreRender} from "./rules/updateAngularFilesForPreRender";
 
 const LOG_SCOPE = 'Rules::ng-add::core';
 
@@ -24,12 +30,12 @@ export function ngAdd(): Rule {
         addSharedIndexScss(),
         updateGlobalStyleFiles(),
         // Routing rules
-        // TODO addSEOCore(),
-        // TODO addNavigationCore(),
-        // TODO addPrerenderHelper(),
-        // TODO updateAngularFilesForSeo(),
-        // TODO updateAngularFilesForNavigation(),
-        // TODO updateAngularFilesForPreRender(),
+        addSeoCore(),
+        addNavigationCore(),
+        addPrerenderCore(),
+        updateAngularFilesForSeo(),
+        updateAngularFilesForNavigation(),
+        updateAngularFilesForPreRender(),
         finishInstall(),
     ]);
     // TODO update page generator to add generated pages into app.routes.ts

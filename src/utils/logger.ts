@@ -3,6 +3,8 @@ import {SchematicContext} from "@angular-devkit/schematics";
 
 export class Logger {
 
+    static isDebug: boolean = false;
+
     static info(context: SchematicContext, scope: string, message: string): void {
         context.logger.info(`${c.green('[INFO]')} [${scope}] ${message}`);
     }
@@ -16,7 +18,9 @@ export class Logger {
     }
 
     static debug(context: SchematicContext, scope: string, message: string): void {
-        context.logger.debug(`${c.cyan('[DEBUG]')} [${scope}] ${message}`);
+        if (this.isDebug) {
+            context.logger.info(`${c.cyan('[DEBUG]')} [${scope}] ${message}`);
+        }
     }
 
 }

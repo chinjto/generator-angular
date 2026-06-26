@@ -5,7 +5,7 @@
   "schematics": "./collection.json",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tsc && cp -R src/core/ui-component/files dist/core/ui-component/files",
+    "build": "tsc && cp -R src/templates dist/templates",
     "rebuild": "npm run clean && npm run build",
     "sandbox": "./.scripts/sandbox-angular.sh",
     "sandbox:idea": "./.scripts/sandbox-angular.sh --idea",

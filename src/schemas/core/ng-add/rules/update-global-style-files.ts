@@ -1,7 +1,7 @@
 import {Tree} from "@angular-devkit/schematics/src/tree/interface";
 import {Rule, SchematicContext} from "@angular-devkit/schematics";
-import {Logger} from "../../../utils/logger";
-import {Scss} from "../../../utils/scss";
+import {Logger} from "../../../../utils/logger";
+import {Scss} from "../../../../utils/scss";
 
 const LOG_SCOPE = 'Rules::ng-add::updateGlobalStyles';
 

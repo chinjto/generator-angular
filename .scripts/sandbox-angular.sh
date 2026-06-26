@@ -49,5 +49,14 @@ else
           y|Y|yes|yes)
               zsh -ic 'idea .'
               ;;
+          *)
+              printf "Open Konsole? [y/N] "
+              read -r ANSWER
+              case "$ANSWER" in
+                      y|Y|yes|yes)
+                        konsole --workdir ./ &
+                        ;;
+              esac
+              ;;
   esac
 fi

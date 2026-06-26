@@ -1,7 +1,7 @@
 import {Tree} from "@angular-devkit/schematics/src/tree/interface";
 import {Rule, SchematicContext} from "@angular-devkit/schematics";
-import {Logger} from "../../../utils/logger";
-import {JsonFiles} from "../../../utils/jsonFiles";
+import {Logger} from "../../../../utils/logger";
+import {JsonFiles} from "../../../../utils/json-files";
 
 const LOG_SCOPE = 'Rules::ng-add::updateTsConfigPaths';
 const TS_CONFIG_JSON_PATH = '/tsconfig.json';

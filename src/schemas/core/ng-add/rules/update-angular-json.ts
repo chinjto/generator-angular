@@ -1,8 +1,8 @@
 import {Tree} from "@angular-devkit/schematics/src/tree/interface";
 import {Rule, SchematicContext} from "@angular-devkit/schematics";
 import {parse} from "jsonc-parser";
-import {Logger} from "../../../utils/logger";
-import {JsonFiles} from "../../../utils/jsonFiles";
+import {Logger} from "../../../../utils/logger";
+import {JsonFiles} from "../../../../utils/json-files";
 
 const LOG_SCOPE = 'Rules::ng-add::updateAngularJson';
 const ANGULAR_JSON_PATH = '/angular.json';

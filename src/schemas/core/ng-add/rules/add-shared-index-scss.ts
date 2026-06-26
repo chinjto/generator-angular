@@ -1,7 +1,9 @@
 import {Tree} from "@angular-devkit/schematics/src/tree/interface";
 import {Rule, SchematicContext} from "@angular-devkit/schematics";
-import {Files} from "../../../utils/files";
+import {Files} from "../../../../utils/files";
+import {Logger} from "../../../../utils/logger";
 
+const LOG_SCOPE = 'Rules::ng-add::addSharedIndexScss';
 const INDEX_SCSS_PATH = '/src/app/shared/styles/_index.scss';
 
 /**
@@ -16,6 +18,7 @@ const INDEX_SCSS_PATH = '/src/app/shared/styles/_index.scss';
 export function addSharedIndexScss() : Rule {
     return (tree: Tree, context: SchematicContext) => {
         Files.create(tree, context, INDEX_SCSS_PATH);
+        Logger.info(context, LOG_SCOPE, 'Shared index created.');
         return tree;
     }
 }

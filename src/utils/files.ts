@@ -17,7 +17,7 @@ export class Files {
     static create(tree: Tree, context: SchematicContext, filePath: string) {
         if (!tree.exists(filePath)) {
             tree.create(filePath, "");
-            Logger.info(context, 'Files::create', `File "${filePath}" created.`);
+            Logger.debug(context, 'Files::create', `File "${filePath}" created.`);
         } else {
             Logger.warn(context, 'Files::create', `File "${filePath}" already exists`);
         }

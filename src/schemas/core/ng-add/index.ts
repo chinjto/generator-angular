@@ -1,16 +1,16 @@
 import {chain, Rule, SchematicContext} from '@angular-devkit/schematics';
 import {Tree} from "@angular-devkit/schematics/src/tree/interface";
-import {Logger} from "../../utils/logger";
+import {Logger} from "../../../utils/logger";
 import {updateAngularJson} from "./rules/update-angular-json";
 import {updateTsConfigPaths} from "./rules/update-tsconfig-paths";
 import {addSharedIndexScss} from "./rules/add-shared-index-scss";
 import {updateGlobalStyleFiles} from "./rules/update-global-style-files";
-import {addSeoCore} from "./rules/addSeoCore";
-import {addNavigationCore} from "./rules/addNavigationCore";
-import {addPrerenderCore} from "./rules/addPrerenderCore";
-import {updateAngularFilesForSeo} from "./rules/updateAngularFilesForSeo";
-import {updateAngularFilesForNavigation} from "./rules/updateAngularFilesForNavigation";
-import {updateAngularFilesForPreRender} from "./rules/updateAngularFilesForPreRender";
+import {addSeoCore} from "./rules/add-seo-core";
+import {addNavigationCore} from "./rules/add-navigation-core";
+import {addPrerenderCore} from "./rules/add-prerender-core";
+import {updateAngularFilesForSeo} from "./rules/update-angular-files-for-seo";
+import {updateAngularFilesForNavigation} from "./rules/update-angular-files-for-navigation";
+import {updateAngularFilesForPreRender} from "./rules/update-angular-files-for-pre-render";
 
 const LOG_SCOPE = 'Rules::ng-add::core';
 
